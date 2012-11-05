@@ -17,7 +17,6 @@ function crf_sitrep_user_default_permissions() {
       0 => 'administrator',
       1 => 'editor',
       2 => 'manager',
-      3 => 'trusted',
     ),
     'module' => 'node',
   );
@@ -39,7 +38,6 @@ function crf_sitrep_user_default_permissions() {
       0 => 'administrator',
       1 => 'editor',
       2 => 'manager',
-      3 => 'trusted',
     ),
     'module' => 'node',
   );
@@ -61,7 +59,6 @@ function crf_sitrep_user_default_permissions() {
       0 => 'administrator',
       1 => 'editor',
       2 => 'manager',
-      3 => 'trusted',
     ),
     'module' => 'node',
   );
