@@ -5,7 +5,6 @@ package = CRF
 php = 5.2.4
 dependencies[] = crf_cluster_content
 dependencies[] = crf_requests
-dependencies[] = crf_workflow
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = hr_revisions
