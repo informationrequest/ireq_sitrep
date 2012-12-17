@@ -63,5 +63,16 @@ function crf_sitrep_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: view any unpublished hr_sitrep content.
+  $permissions['view any unpublished hr_sitrep content'] = array(
+    'name' => 'view any unpublished hr_sitrep content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+      2 => 'manager',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   return $permissions;
 }
