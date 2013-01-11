@@ -26,7 +26,8 @@ function crf_sitrep_user_default_permissions() {
     'name' => 'delete any hr_sitrep content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'manager',
+      1 => 'editor',
+      2 => 'manager',
     ),
     'module' => 'node',
   );
@@ -47,7 +48,8 @@ function crf_sitrep_user_default_permissions() {
     'name' => 'edit any hr_sitrep content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'manager',
+      1 => 'editor',
+      2 => 'manager',
     ),
     'module' => 'node',
   );
