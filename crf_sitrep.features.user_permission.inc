@@ -14,9 +14,9 @@ function crf_sitrep_user_default_permissions() {
   $permissions['create hr_sitrep content'] = array(
     'name' => 'create hr_sitrep content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function crf_sitrep_user_default_permissions() {
   $permissions['delete any hr_sitrep content'] = array(
     'name' => 'delete any hr_sitrep content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function crf_sitrep_user_default_permissions() {
   $permissions['delete own hr_sitrep content'] = array(
     'name' => 'delete own hr_sitrep content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function crf_sitrep_user_default_permissions() {
   $permissions['edit any hr_sitrep content'] = array(
     'name' => 'edit any hr_sitrep content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function crf_sitrep_user_default_permissions() {
   $permissions['edit own hr_sitrep content'] = array(
     'name' => 'edit own hr_sitrep content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -69,9 +69,9 @@ function crf_sitrep_user_default_permissions() {
   $permissions['view any unpublished hr_sitrep content'] = array(
     'name' => 'view any unpublished hr_sitrep content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'view_unpublished',
   );

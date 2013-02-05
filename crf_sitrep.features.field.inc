@@ -101,6 +101,7 @@ function crf_sitrep_field_default_fields() {
       'label' => 'Request',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
