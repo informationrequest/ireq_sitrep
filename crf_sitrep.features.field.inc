@@ -10,14 +10,14 @@
 function crf_sitrep_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-hr_sitrep-field_crf_request'.
-  $fields['node-hr_sitrep-field_crf_request'] = array(
+  // Exported field: 'node-hr_sitrep-field_request'.
+  $fields['node-hr_sitrep-field_request'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_crf_request',
+      'field_name' => 'field_request',
       'field_permissions' => array(
         'type' => '0',
       ),
@@ -46,16 +46,12 @@ function crf_sitrep_field_default_fields() {
             ),
           ),
           'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'field_asst_contact_email:email',
-            'property' => 'nid',
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'crf_request' => 'crf_request',
+            'request' => 'request',
           ),
         ),
-        'handler_submit' => 'Change handler',
         'target_type' => 'node',
       ),
       'translatable' => '0',
@@ -73,21 +69,10 @@ function crf_sitrep_field_default_fields() {
           'settings' => array(
             'diff_custom' => 0,
             'diff_custom_settings' => array(),
-            'link' => 1,
+            'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => '4',
-        ),
-        'diff_complete' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'diff_custom' => 0,
-            'diff_custom_settings' => array(),
-            'link' => 1,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => '4',
+          'weight' => 9,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -97,7 +82,9 @@ function crf_sitrep_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_crf_request',
+      'entityconnect_unload_add' => '1',
+      'entityconnect_unload_edit' => '1',
+      'field_name' => 'field_request',
       'label' => 'Request',
       'required' => 1,
       'settings' => array(
@@ -107,10 +94,13 @@ function crf_sitrep_field_default_fields() {
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(),
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
         'type' => 'options_select',
-        'weight' => '2',
+        'weight' => '3',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
