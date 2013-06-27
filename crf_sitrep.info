@@ -61,7 +61,6 @@ features[variable][] = node_submitted_crf_sitrep
 features[variable][] = print_display_comment_crf_sitrep
 features[variable][] = print_display_crf_sitrep
 features[variable][] = print_display_urllist_crf_sitrep
-features[variable][] = workbench_access_node_type_crf_sitrep
 features[variable][] = workbench_moderation_default_state_crf_sitrep
 l10n path = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/%core/%project/%project-%release.%language.po
 l10n server = localize.humanitarianresponse.info

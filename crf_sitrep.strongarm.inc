@@ -129,9 +129,6 @@ function crf_sitrep_strongarm() {
         'path' => array(
           'weight' => '8',
         ),
-        'workbench_access' => array(
-          'weight' => '1',
-        ),
       ),
       'display' => array(),
     ),
@@ -206,13 +203,6 @@ function crf_sitrep_strongarm() {
   $strongarm->name = 'print_display_urllist_crf_sitrep';
   $strongarm->value = 1;
   $export['print_display_urllist_crf_sitrep'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'workbench_access_node_type_crf_sitrep';
-  $strongarm->value = 1;
-  $export['workbench_access_node_type_crf_sitrep'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

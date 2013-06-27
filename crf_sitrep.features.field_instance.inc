@@ -112,7 +112,6 @@ function crf_sitrep_field_default_field_instances() {
       'type' => 'text_textarea',
       'weight' => 7,
     ),
-    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-crf_sitrep-field_crf_hum_needs'
@@ -180,7 +179,6 @@ function crf_sitrep_field_default_field_instances() {
       'type' => 'text_textarea',
       'weight' => 5,
     ),
-    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-crf_sitrep-field_crf_hum_response'
@@ -248,7 +246,6 @@ function crf_sitrep_field_default_field_instances() {
       'type' => 'text_textarea',
       'weight' => 6,
     ),
-    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-crf_sitrep-field_key_figure'
@@ -316,7 +313,6 @@ function crf_sitrep_field_default_field_instances() {
       'type' => 'text_textfield',
       'weight' => 3,
     ),
-    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-crf_sitrep-field_key_figure_description'
@@ -384,7 +380,6 @@ function crf_sitrep_field_default_field_instances() {
       'type' => 'text_textarea',
       'weight' => 4,
     ),
-    'workbench_access_field' => 0,
   );
 
   // Translatables
