@@ -43,6 +43,43 @@ function crf_sitrep_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-crf_sitrep-field_collection_request_ref'
+  $field_instances['node-crf_sitrep-field_collection_request_ref'] = array(
+    'bundle' => 'crf_sitrep',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_collection_request_ref',
+    'label' => 'Request',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
       'weight' => 2,
     ),
   );
@@ -110,7 +147,7 @@ function crf_sitrep_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -177,7 +214,7 @@ function crf_sitrep_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -244,7 +281,7 @@ function crf_sitrep_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -311,7 +348,7 @@ function crf_sitrep_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -378,7 +415,7 @@ function crf_sitrep_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -391,6 +428,7 @@ function crf_sitrep_field_default_field_instances() {
   t('Humanitarian Response');
   t('Key Figure');
   t('Key Figure Description');
+  t('Request');
 
   return $field_instances;
 }

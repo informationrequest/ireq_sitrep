@@ -14,7 +14,7 @@ function crf_sitrep_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_crf_sitrep';
-  $strongarm->value = 'edit-comment';
+  $strongarm->value = 'edit-print';
   $export['additional_settings__active_tab_crf_sitrep'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -84,7 +84,7 @@ function crf_sitrep_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'diff_show_preview_changes_node_crf_sitrep';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['diff_show_preview_changes_node_crf_sitrep'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -120,17 +120,55 @@ function crf_sitrep_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__crf_sitrep';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'print' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '1',
+        ),
+        'workbench_access' => array(
+          'weight' => '1',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'eva_field_collection_request_entity_view_1' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+        'eva_report_workflow_entity_view_1' => array(
+          'default' => array(
+            'weight' => '8',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__crf_sitrep'] = $strongarm;
@@ -146,9 +184,7 @@ function crf_sitrep_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_crf_sitrep';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_crf_sitrep'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -163,9 +199,8 @@ function crf_sitrep_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_crf_sitrep';
   $strongarm->value = array(
-    0 => 'promote',
-    1 => 'moderation',
-    2 => 'revision',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_crf_sitrep'] = $strongarm;
 
@@ -173,7 +208,7 @@ function crf_sitrep_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_crf_sitrep';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_crf_sitrep'] = $strongarm;
 
   $strongarm = new stdClass();
