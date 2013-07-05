@@ -31,6 +31,7 @@ features[field_instance][] = node-crf_sitrep-field_crf_hum_needs
 features[field_instance][] = node-crf_sitrep-field_crf_hum_response
 features[field_instance][] = node-crf_sitrep-field_key_figure
 features[field_instance][] = node-crf_sitrep-field_key_figure_description
+features[field_instance][] = node-crf_sitrep-field_recipient
 features[node][] = crf_sitrep
 features[user_permission][] = create crf_sitrep content
 features[user_permission][] = delete any crf_sitrep content
