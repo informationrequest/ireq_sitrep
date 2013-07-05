@@ -419,6 +419,46 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-crf_sitrep-field_recipient'
+  $field_instances['node-crf_sitrep-field_recipient'] = array(
+    'bundle' => 'crf_sitrep',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_recipient',
+    'label' => 'Requested to',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('A key number related to your cluster that you would like to highlight in the situation report.');
@@ -429,6 +469,7 @@ function crf_sitrep_field_default_field_instances() {
   t('Key Figure');
   t('Key Figure Description');
   t('Request');
+  t('Requested to');
 
   return $field_instances;
 }
