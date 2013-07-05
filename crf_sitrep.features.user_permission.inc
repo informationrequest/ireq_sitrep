@@ -13,7 +13,9 @@ function crf_sitrep_user_default_permissions() {
   // Exported permission: create crf_sitrep content.
   $permissions['create crf_sitrep content'] = array(
     'name' => 'create crf_sitrep content',
-    'roles' => array(),
+    'roles' => array(
+      'CRF_user' => 'CRF_user',
+    ),
     'module' => 'node',
   );
 
@@ -34,21 +36,28 @@ function crf_sitrep_user_default_permissions() {
   // Exported permission: edit any crf_sitrep content.
   $permissions['edit any crf_sitrep content'] = array(
     'name' => 'edit any crf_sitrep content',
-    'roles' => array(),
+    'roles' => array(
+      'CRF_manager' => 'CRF_manager',
+      'CRF_user' => 'CRF_user',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit own crf_sitrep content.
   $permissions['edit own crf_sitrep content'] = array(
     'name' => 'edit own crf_sitrep content',
-    'roles' => array(),
+    'roles' => array(
+      'CRF_user' => 'CRF_user',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: view any unpublished crf_sitrep content.
   $permissions['view any unpublished crf_sitrep content'] = array(
     'name' => 'view any unpublished crf_sitrep content',
-    'roles' => array(),
+    'roles' => array(
+      'CRF_user' => 'CRF_user',
+    ),
     'module' => 'view_unpublished',
   );
 
