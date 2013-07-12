@@ -3,6 +3,7 @@ description = CRF Situation Report
 core = 7.x
 package = CRF
 php = 5.2.4
+dependencies[] = chosen
 dependencies[] = crf_request
 dependencies[] = ctools
 dependencies[] = entityreference
