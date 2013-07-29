@@ -290,6 +290,49 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-crf_sitrep-field_file'
+  $field_instances['node-crf_sitrep-field_file'] = array(
+    'bundle' => 'crf_sitrep',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_file',
+    'label' => 'Attach related files',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => '',
+      'file_extensions' => 'txt',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-crf_sitrep-field_key_figure'
   $field_instances['node-crf_sitrep-field_key_figure'] = array(
     'bundle' => 'crf_sitrep',
@@ -469,6 +512,7 @@ function crf_sitrep_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('A key number related to your cluster that you would like to highlight in the situation report.');
+  t('Attach related files');
   t('Clusters');
   t('Gaps');
   t('Humanitarian Needs');

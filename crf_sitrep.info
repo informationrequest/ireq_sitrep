@@ -32,6 +32,7 @@ features[field_instance][] = node-crf_sitrep-field_collection_request_ref
 features[field_instance][] = node-crf_sitrep-field_crf_gaps
 features[field_instance][] = node-crf_sitrep-field_crf_hum_needs
 features[field_instance][] = node-crf_sitrep-field_crf_hum_response
+features[field_instance][] = node-crf_sitrep-field_file
 features[field_instance][] = node-crf_sitrep-field_key_figure
 features[field_instance][] = node-crf_sitrep-field_key_figure_description
 features[field_instance][] = node-crf_sitrep-field_recipient
