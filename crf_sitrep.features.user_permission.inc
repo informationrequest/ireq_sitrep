@@ -52,6 +52,40 @@ function crf_sitrep_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: moderate crf_sitrep state from draft to needs_review.
+  $permissions['moderate crf_sitrep state from draft to needs_review'] = array(
+    'name' => 'moderate crf_sitrep state from draft to needs_review',
+    'roles' => array(
+      'CRF_user' => 'CRF_user',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate crf_sitrep state from draft to published.
+  $permissions['moderate crf_sitrep state from draft to published'] = array(
+    'name' => 'moderate crf_sitrep state from draft to published',
+    'roles' => array(),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate crf_sitrep state from needs_review to draft.
+  $permissions['moderate crf_sitrep state from needs_review to draft'] = array(
+    'name' => 'moderate crf_sitrep state from needs_review to draft',
+    'roles' => array(
+      'CRF_manager' => 'CRF_manager',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate crf_sitrep state from needs_review to published.
+  $permissions['moderate crf_sitrep state from needs_review to published'] = array(
+    'name' => 'moderate crf_sitrep state from needs_review to published',
+    'roles' => array(
+      'CRF_manager' => 'CRF_manager',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: view any unpublished crf_sitrep content.
   $permissions['view any unpublished crf_sitrep content'] = array(
     'name' => 'view any unpublished crf_sitrep content',
