@@ -33,7 +33,7 @@ function crf_sitrep_node_info() {
     'crf_sitrep' => array(
       'name' => t('Situation Report Information'),
       'base' => 'node_content',
-      'description' => t('CRF Situation Report Information'),
+      'description' => t('Situation Report Information'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
