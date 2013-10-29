@@ -94,7 +94,7 @@ function crf_sitrep_field_default_field_instances() {
     'bundle' => 'crf_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => "A summary of gaps in humanitarian response (people's needs that are not being met) and major constraints faced by responders (e.g., lack of access, low funding, etc.).",
+    'description' => 'A summary of gaps in humanitarian response (people\'s needs that are not being met) and major constraints faced by responders (e.g., lack of access, low funding, etc.).',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -158,7 +158,7 @@ function crf_sitrep_field_default_field_instances() {
     'bundle' => 'crf_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => "A summary of affected people's humanitarian needs, with figures consolidated to the greatest degree possible. Do not include information on cluster needs (e.g., funding, capacity, etc.).",
+    'description' => 'A summary of affected people\'s humanitarian needs, with figures consolidated to the greatest degree possible. Do not include information on cluster needs (e.g., funding, capacity, etc.).',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -499,7 +499,11 @@ function crf_sitrep_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('A key number related to your cluster that you would like to highlight in the situation report.');
+  t('A brief description of what the figure you entered above refers to. (Example: Number of children without access to education).');
+  t('A key number related to your cluster that you would like to highlight in the situation report. Enter only number (no description).');
+  t('A summary of affected people\'s humanitarian needs, with figures consolidated to the greatest degree possible. Do not include information on cluster needs (e.g., funding, capacity, etc.).');
+  t('A summary of gaps in humanitarian response (people\'s needs that are not being met) and major constraints faced by responders (e.g., lack of access, low funding, etc.).');
+  t('A summary of major response activities, with figures consolidated to the greatest degree possible. Minimize any information on cluster process (e.g., meetings, creation of sub-working groups, etc.).');
   t('Attach related files');
   t('Clusters');
   t('Gaps');
