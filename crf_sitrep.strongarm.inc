@@ -221,6 +221,13 @@ function crf_sitrep_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_crf_external_pattern';
+  $strongarm->value = 'request/[node:title]';
+  $export['pathauto_node_crf_external_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'print_display_comment_crf_sitrep';
   $strongarm->value = 0;
   $export['print_display_comment_crf_sitrep'] = $strongarm;
