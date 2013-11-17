@@ -1,5 +1,5 @@
-crf_sitrep
+ireq_sitrep
 --------
-CRF Situation Report
+IREQ Situation Report
 
 Merge old features hr_sitrep and crf_sitrep

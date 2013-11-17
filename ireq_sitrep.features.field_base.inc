@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * crf_sitrep.features.field_base.inc
+ * ireq_sitrep.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function crf_sitrep_field_default_field_bases() {
+function ireq_sitrep_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_crf_gaps'
-  $field_bases['field_crf_gaps'] = array(
+  // Exported field_base: 'field_ireq_gaps'
+  $field_bases['field_ireq_gaps'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_crf_gaps',
+    'field_name' => 'field_ireq_gaps',
     'field_permissions' => array(
       'type' => 0,
     ),
@@ -42,13 +42,13 @@ function crf_sitrep_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_crf_hum_needs'
-  $field_bases['field_crf_hum_needs'] = array(
+  // Exported field_base: 'field_ireq_hum_needs'
+  $field_bases['field_ireq_hum_needs'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_crf_hum_needs',
+    'field_name' => 'field_ireq_hum_needs',
     'field_permissions' => array(
       'type' => 0,
     ),
@@ -74,13 +74,13 @@ function crf_sitrep_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_crf_hum_response'
-  $field_bases['field_crf_hum_response'] = array(
+  // Exported field_base: 'field_ireq_hum_response'
+  $field_bases['field_ireq_hum_response'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_crf_hum_response',
+    'field_name' => 'field_ireq_hum_response',
     'field_permissions' => array(
       'type' => 0,
     ),

@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * crf_sitrep.features.field_instance.inc
+ * ireq_sitrep.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function crf_sitrep_field_default_field_instances() {
+function ireq_sitrep_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-crf_sitrep-field_clusters'
-  $field_instances['node-crf_sitrep-field_clusters'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_clusters'
+  $field_instances['node-ireq_sitrep-field_clusters'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -50,9 +50,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_collection_request_ref'
-  $field_instances['node-crf_sitrep-field_collection_request_ref'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_collection_request_ref'
+  $field_instances['node-ireq_sitrep-field_collection_request_ref'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -89,9 +89,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_crf_gaps'
-  $field_instances['node-crf_sitrep-field_crf_gaps'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_ireq_gaps'
+  $field_instances['node-ireq_sitrep-field_ireq_gaps'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'A summary of gaps in humanitarian response (people\'s needs that are not being met) and major constraints faced by responders (e.g., lack of access, low funding, etc.).',
@@ -111,7 +111,7 @@ function crf_sitrep_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_crf_gaps',
+    'field_name' => 'field_ireq_gaps',
     'label' => 'Gaps',
     'required' => 0,
     'settings' => array(
@@ -153,9 +153,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_crf_hum_needs'
-  $field_instances['node-crf_sitrep-field_crf_hum_needs'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_ireq_hum_needs'
+  $field_instances['node-ireq_sitrep-field_ireq_hum_needs'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'A summary of affected people\'s humanitarian needs, with figures consolidated to the greatest degree possible. Do not include information on cluster needs (e.g., funding, capacity, etc.).',
@@ -175,7 +175,7 @@ function crf_sitrep_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_crf_hum_needs',
+    'field_name' => 'field_ireq_hum_needs',
     'label' => 'Humanitarian Needs',
     'required' => 1,
     'settings' => array(
@@ -217,9 +217,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_crf_hum_response'
-  $field_instances['node-crf_sitrep-field_crf_hum_response'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_ireq_hum_response'
+  $field_instances['node-ireq_sitrep-field_ireq_hum_response'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'A summary of major response activities, with figures consolidated to the greatest degree possible. Minimize any information on cluster process (e.g., meetings, creation of sub-working groups, etc.).',
@@ -239,7 +239,7 @@ function crf_sitrep_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_crf_hum_response',
+    'field_name' => 'field_ireq_hum_response',
     'label' => 'Humanitarian Response',
     'required' => 1,
     'settings' => array(
@@ -281,9 +281,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_file'
-  $field_instances['node-crf_sitrep-field_file'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_file'
+  $field_instances['node-ireq_sitrep-field_file'] = array(
+    'bundle' => 'ireq_sitrep',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -324,9 +324,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_key_figure'
-  $field_instances['node-crf_sitrep-field_key_figure'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_key_figure'
+  $field_instances['node-ireq_sitrep-field_key_figure'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'A key number related to your cluster that you would like to highlight in the situation report. Enter only number (no description).',
@@ -391,9 +391,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_key_figure_description'
-  $field_instances['node-crf_sitrep-field_key_figure_description'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_key_figure_description'
+  $field_instances['node-ireq_sitrep-field_key_figure_description'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'A brief description of what the figure you entered above refers to. (Example: Number of children without access to education).',
@@ -455,9 +455,9 @@ function crf_sitrep_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-crf_sitrep-field_recipient'
-  $field_instances['node-crf_sitrep-field_recipient'] = array(
-    'bundle' => 'crf_sitrep',
+  // Exported field_instance: 'node-ireq_sitrep-field_recipient'
+  $field_instances['node-ireq_sitrep-field_recipient'] = array(
+    'bundle' => 'ireq_sitrep',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',

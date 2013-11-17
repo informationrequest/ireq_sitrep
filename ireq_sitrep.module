@@ -1,8 +1,8 @@
 <?php
 /**
  * @file
- * Code for the CRF SitRep feature.
+ * Code for the IREQ SitRep feature.
  */
 
-include_once('crf_sitrep.features.inc');
+include_once('ireq_sitrep.features.inc');
 
